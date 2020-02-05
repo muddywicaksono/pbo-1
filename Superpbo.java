@@ -27,13 +27,16 @@ public class Superpbo {
 //        int age = umur.nextInt();
 //        System.out.println("Umur Saya : " + age);
 
-        Scanner input = new Scanner(System.in);
+        /*Scanner input = new Scanner(System.in);
+       
         System.out.print("masukkan nama : ");
         String userName = input.nextLine();
+        
         System.out.print("masukkan umur : ");
         int umur = input.nextInt();
-        System.out.println("Nama Saya : " + userName);
-        System.out.println("Umur Saya : " + umur);
+        
+        System.out.println("Nama : " + userName);
+        System.out.println("Umur : " + umur);
 
         if (umur >= 17 & umur < 50) {
             System.out.println("dewasa");
@@ -43,12 +46,40 @@ public class Superpbo {
         }
         else {
             System.out.println("tua");
-        }
-            
+        }*/
+            Scanner input = new Scanner(System.in);
         
-    }
-    
-    private class Superaja {
+            System.out.println("Menu : ");
+            System.out.println("1. Luas ");
+            System.out.println("2. Volume");
+
+            System.out.print("Pilih Menu : ");
+            int pilih = input.nextInt();
+
+            switch (pilih){
+              case 1: 
+                    System.out.println(" Menu Luas ");
+                    System.out.println("1. Segitiga ");
+                    System.out.println("2. Persegi");
+                    
+                    System.out.println("Pilih Menu : ");
+                    int pilihlagi = input.nextInt();
+                    
+                    switch (pilihlagi){
+                        case 1: 
+                            System.out.println("Luas Segitiga");
+                            
+                            System.out.println("Masukkan Tinggi");
+                            int tinggisgt = input.nextInt();
+                            
+                            System.out.println("Masukkan Alas");
+                            int alassgt = input.nextInt();
+
+                            System.out.println("1/2 x " + tinggisgt + " x " + alassgt);
+                            System.out.print("Hasil : " );
+                            System.out.println((0.5)*tinggisgt*alassgt);
+                    }
+        }
         
     }
 }
